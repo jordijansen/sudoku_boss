@@ -5,7 +5,7 @@ class Sudoku:
 
     boxlist = []
 
-    def __init__(self, sudoku, boxperrow,  boxpercol):
+    def __init__(self, sudoku, boxperrow, boxpercol):
         self.sudoku = sudoku
         self.boxperrow = boxperrow
         self.boxpercol = boxpercol
@@ -64,9 +64,9 @@ class Sudoku:
         print self.boxlist
 
     def validate_all(self, row, col, value):
-        if self.validate_row(row, value) :
-            if self.validate_col(col, value) :
-                if self.validate_box(row, col, value) :
+        if self.validate_row(row, value):
+            if self.validate_col(col, value):
+                if self.validate_box(row, col, value):
                     return True
         return False
 
