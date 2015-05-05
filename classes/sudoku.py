@@ -60,8 +60,6 @@ class Sudoku:
                 yvalue += boxpercol
             xvalue += boxperrow
 
-        print self.boxlist
-
     def validate_all(self, row, col, value):
         if self.validate_row(row, value):
             if self.validate_col(col, value):
