@@ -1,14 +1,13 @@
 class Sudoku:
-    sudoku = [
-        [5, 3, 0, 0, 7, 0, 0, 0, 0],
-        [6, 0, 0, 1, 9, 5, 0, 0, 0],
-        [0, 9, 8, 0, 0, 0, 0, 6, 0],
-        [8, 0, 0, 0, 6, 0, 0, 0, 3],
-        [4, 0, 0, 8, 0, 3, 0, 0, 1],
-        [7, 0, 0, 0, 2, 0, 0, 0, 6],
-        [0, 6, 0, 0, 0, 0, 2, 8, 0],
-        [0, 0, 0, 4, 1, 9, 0, 0, 5],
-        [0, 0, 0, 0, 8, 0, 0, 7, 9]
-    ]
-
+    sudoku = [[]]
     boxwidth = 3
+
+    def __init__(self, sudoku, boxwidth):
+        self.sudoku = sudoku
+        self.boxwidth = boxwidth
+
+    def get_value(self, row, col):
+        return self.sudoku[row][col]
+
+    def set_value(self, row, col, value):
+        self.sudoku[row][col] = value
