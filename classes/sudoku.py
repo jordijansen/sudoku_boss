@@ -32,7 +32,6 @@ class Sudoku:
 
     def validate_box(self, row, col, value):
         box = self.get_box(row, col)
-        print box
         maxxvalue = box[0] + self.boxperrow
         maxyvalue = box[1] + self.boxpercol
 

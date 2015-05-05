@@ -1,5 +1,6 @@
 class Printer:
     def print_sudoku(self, sudoku, box_width):
+        print sudoku
         y = 0
         while y < len(sudoku):
             if y % box_width == 0:
