@@ -16,4 +16,4 @@ puzzle = [
 printer = Printer()
 sudoku = Sudoku(puzzle, 3)
 
-printer.printsudoku(sudoku.sudoku, sudoku.boxwidth)
+printer.print_sudoku(sudoku.sudoku, sudoku.box_width)

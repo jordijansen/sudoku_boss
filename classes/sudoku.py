@@ -1,10 +1,10 @@
 class Sudoku:
     sudoku = [[]]
-    boxwidth = 3
+    box_width = 3
 
-    def __init__(self, sudoku, boxwidth):
+    def __init__(self, sudoku, box_width):
         self.sudoku = sudoku
-        self.boxwidth = boxwidth
+        self.box_width = box_width
 
     def get_value(self, row, col):
         return self.sudoku[row][col]
