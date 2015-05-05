@@ -18,15 +18,10 @@ boxheight = 3
 
 boxvalues = []
 
-for row in puzzle:
-    offset = 0
-    counter = 0
-
-    splitted = row[offset:len(row)/boxwidth]
-    print splitted
-
 
 printer = Printer()
-sudoku = Sudoku(puzzle, 3)
+sudoku = Sudoku(puzzle, 2, 3)
 
-printer.print_sudoku(sudoku.sudoku, sudoku.box_width)
+sudoku.playfield.print_playfield()
+
+#printer.print_sudoku(sudoku.sudoku, sudoku.boxperrow)

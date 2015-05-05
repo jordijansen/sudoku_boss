@@ -1,10 +1,14 @@
+from classes.playfield import Playfield
 class Sudoku:
-    sudoku = [[]]
-    box_width = 3
+    playfield = None
+    boxperrow = 3
+    boxpercol = 2
 
-    def __init__(self, sudoku, box_width):
+    def __init__(self, sudoku, boxperrow, boxpercol):
         self.sudoku = sudoku
-        self.box_width = box_width
+        self.boxperrow = boxperrow
+        self.boxpercol = boxpercol
+        self.playfield = Playfield(boxperrow, boxpercol)
 
     def get_value(self, row, col):
         return self.sudoku[row][col]
